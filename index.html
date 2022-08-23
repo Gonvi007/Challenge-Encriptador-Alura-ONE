@@ -14,52 +14,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="container">
-
-        <div class="logo">
-            <img src="./Image/Logo.png" alt="Logo Alura">
-            <img src="./Image/LogoONE.png" alt="">
-        </div>
-
-        <div class="inputEscribir">
-            <textarea autofocus name="textoEncriptar" id="textoEncriptar" cols="30" rows="10">Ingrese texto...</textarea>
-        </div>
-
-        <div class="advertencia">
-            <img class="imgadvertencia" src="./Image/alerta.png" alt="alerta">
-            <p>Solo ingresa letras minusculas y sin acentos</p>
-        </div>
-
-        <div class="btnEcrip">
-            <button class="btonEncriptar">Encriptar</button>
-            <button class="btonDesencriptar">Desencriptar</button>
-        </div>
-
-        <div class="containerResultado">
-            
-            <div class="mensajeDerecha">
-                <img src="./Image/Muñeco.png" alt="muñeco">
-                <textarea hidden name="textoresultado" id="textAreaResultado" cols="30" rows="10"></textarea>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="./Image/Logo.png" alt="Logo" class="navbar-img">
             </div>
+            <div class="navbar-content">
 
-            <div class="info">
-                <h2 class="infoerror">Ningun mensaje fue encontrado</h2>
-                <p class="infoaviso">Ingrese el texto que desea encriptar/desencriptar</p>
             </div>
-            <div class="btnCopiarTexto">
-                <button class="btnCopy">Copiar</button>
-            </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <footer>
-        <a href="https://github.com/Gonvi007" target="_blank">
-            <i class="icon icon-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/gonvi007/" target="_blank"> <i class="icon icon-linkedin"></i></a>
-        <p>By Alexis González Villanueva</p>
-    </footer>
+    <main>
+        <article class="textToEncrypt-and-buttons">
+            <section class="textToEncrypt">
+                <textarea class="textToProcessed" placeholder="Ingrese el texto a encriptar"></textarea>
+                <div class="div-erase">
+                </div>
+            </section>
+
+            <section class="buttons">
+                <div class="menssageToUser">
+                    <img src="./Image/alerta.png" alt="signo de exclamación" class="exclamationMark" />
+                    <p class="userMenssage-p" >solo acepta palabras en minúscula y sin signos ortográficos </p>
+                </div>
+                <input type="button" class="btn-encrypt btn btn1"
+                    value="Encriptando..."/>
+                <input type="button" class="btn-decrypt btn btn2"
+                    value="Desencriptar"/>
+            </section>
+        </article>
+
+
+        <article class="processedText">
+        </article>
+
+        <footer>
+            <a href="https://github.com/Gonvi007" target="_blank">
+                <i class="icon icon-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gonvi007/" target="_blank"> <i class="icon icon-linkedin"></i></a>
+            <p>By Alexis González Villanueva</p>
+        </footer>
+        <script src="./main.js"></script>
+    </main>
+
+
     <script src="./main.js"></script>
 </body>
 </html>
