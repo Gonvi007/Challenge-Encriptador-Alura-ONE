@@ -1,218 +1,248 @@
-
-/* estilos generales */
-:root {
-   --bgColor: rgba(243, 245, 252, 1);
-   --bgColor2: rgb(222, 228, 250);
-   --textColor: rgba(10, 56, 113, 1);
-   --transparent: rgba(0, 0, 0, 0);
-   overflow: auto;
- }
  * {
-   background-color: var(--bgColor2);
-   color: var(--textColor);
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   font-family: Arial, Helvetica, sans-serif;
- }
- body {
-   display: flex;
-   flex-wrap: wrap;
-   margin-top: 30px;
- }
- /* estilos del heder */
- header {
-   width: 185px;
-   display: flex;
- }
- .navbar {
-   width: 100%;
- }
- navbar-img,
- navbar-logo {
-   width: 100%;
-   padding: 10px;
- }
- .navbar-content {
-   height: calc(100% - 74px);
- }
- /* estilos dentro del main */
- main {
-   width: calc(100% - 185px);
-   display: flex;
-   flex-wrap: wrap;
- }
- /* estilos del primer textarea */
- .textToEncrypt-and-buttons {
-   display: flex;
-   flex-wrap: wrap;
-   width: 60%;
-   height: 96%;
-   margin: auto;
-   padding-top: 90px;
- }
- .textToEncrypt {
-   display: flex;
-   width: 95%;
-   margin: auto;
-   height: calc(100% - 180px);
- }
- .textToProcessed {
-   display: flex;
-   flex-wrap: wrap;
-   height: 100%;
-   width: 90%;
-   font-size: 30px;
-   font-weight: bold;
-   padding: 19px;
-   border: solid 1px var(--transparent);
-   outline: none;
-   resize: none;
- 
- }
- .textToProcessed::placeholder {
-   color: var(--textColor);
-   font-weight: normal;
- }
- .div-erase {
-   text-align: center;
-   width: 10%;
- }
- .erase {
-   width: 100%;
-   cursor: pointer;
- }
- .buttons {
-   display: flex;
-   flex-wrap: wrap;
-   width: 90%;
-   margin: auto;
-   max-height: 30%;
-   min-height: 150px;
- }
- .menssageToUser{
-   width: 90%;
-   height: auto;
-   margin: auto;
-   display: flex;
- 
- }
- .exclamationMark{
-   width: 25px;
-   height: auto;
-   margin-right: 5px;
-   cursor: pointer;
- }
- .btn {
-   width: 40%;
-   height: 67px;
-   margin: auto;
-   background-color: var(--transparent);
-   color: var(--textColor);
-   border: solid 2px var(--textColor);
-   border-radius: 25px;
-   font-size: 20px;
-   font-weight: bold;
-   cursor: pointer;
- }
- .btn1 {
-   background-color: var(--textColor);
-   color: var(--bgColor);
- }
- /* estilos para el segundo textarea */
- .processedText {
-   display: flex;
-   margin: auto;
-   width: 30%;
-   border-radius: 25px;
-   background-color: rgb(255, 255, 255);
-   min-height: 530px;
-   max-height: auto;
- 
-   -webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
- -moz-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
- box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
- }
- .noContentGreat {
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
-   max-height: 100%;
-   min-height: 800px;
-   margin: auto;
-   border-radius: 25px;
-   background-color: rgb(255, 255, 255);
- }
- .noCntent-div-img {
-   width: 80%;
-   margin: auto auto 0 auto;
-   object-fit: cover;
-   background-color: rgb(255, 255, 255);
- }
- .noCntent-img {
-   margin: auto;
-   background-color: rgb(255, 255, 255);
- }
- 
- .noContent-div-text {
-   margin: auto;
-   background-color: rgb(255, 255, 255);
-   text-align: center;
- }
- .noContent-h2 {
-   margin: auto;
-   text-align: center;
-   background-color: rgb(255, 255, 255);
- }
- .noConten-p {
-   margin: auto;
-   text-align: center;
-   background-color: rgb(255, 255, 255);
-   margin-top: 30px;
- }
- .yesContent{
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
-   max-height: 100%;
-   min-height: 800px;
-   margin: auto;
-   background-color: rgb(255, 255, 255);
-   border-radius: 25px;
- }
- .noContentShort{
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
-   height: 100%;
-   margin: auto;
-   background-color: rgb(255, 255, 255);
-   border-radius: 25px;
-   border-radius: 25px;
- }
- .textArea-processedText{
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
-   height: 100%;
-   margin: auto;
-   background-color: var(--transparent);
-   border-radius: 25px;
- }
- .processedText-textarea{
-   display: inline-block;
-   max-width: 90%;
-   min-width: 90%;
-   min-height: 600px;
-   margin: auto;
-   background-color: var(--transparent);
-   border: var(--transparent);
-   font-size: 25px;
-   resize: vertical;
-   margin: auto;
-   outline: none;
-   overflow: auto;
- }
- .btn-copy{
-   width: 90%;
- }
+ }body{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  background: #F3F5FC;
+}
+
+main{
+  width: 100%;
+  min-height: 90%;
+  display: flex;
+}
+
+/* Section para ingresar el texto*/
+.principal{
+  width: 65%;
+  display: inline-block;
+}
+
+.logo-header{
+  padding: 25px 80px;
+}
+
+.contenido-form{
+  width: 90%;
+  height: 80%;
+  margin-left: 8%;
+}
+
+form{
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+textarea{
+  width: 80%;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: 'Inter';
+  font-size: 32px;
+  font-weight: 300;
+  color: #0A3871;
+  text-transform: lowercase;
+  padding: 0;
+}
+
+textarea::placeholder{
+  font-size: 32px;
+  color: #0A3871;
+}
+
+.botones-accion{
+  width: 100%;
+  padding: 15px 0;
+}
+
+.texto-condicion{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.texto-condicion p{
+  font-size: 12px;
+  color: #495057;
+  opacity: 0.8;
+}
+
+.boton-primario, .boton-secundario{
+  width: 45%;
+  background: #0A3871;
+  border-radius: 24px;
+  display: inline-block;
+  padding: 24px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.boton-secundario{
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  margin-left: 10%;
+}
+
+/* Section para el resutaldo de encriptado-desencriptado */
+.area-resultado{
+  width: 35%;
+  display: inline-block;
+  min-height: 92vh;
+  padding: 30px 20px;
+}
+
+.contenido-inicio{
+  height: 100%;
+  border-radius: 32px;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.contenido-inicio img{
+  width: 75%;
+}
+
+.contenido-inicio h4{
+  margin: 15px 0;
+  color: #343A40;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contenido-inicio p{
+  color: #495057;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contenido-resultado{
+  display: none;
+  height: 100%;
+  border-radius: 32px;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+}
+
+.contenido-resultado p{
+  font-size: 24px;
+  text-align: left;
+  color: #495057;
+  text-transform: lowercase;
+  overflow-wrap: break-word;
+}
+
+.boton-copia{
+  padding: 24px;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  color: #0A3871; 
+  cursor: pointer;
+  background: none;
+}
+
+/* Footer*/
+footer{
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.icon {
+  color: rgb(9, 68, 107);
+}
+
+p a{
+  text-decoration: none;
+  color: #0A3871;
+}
+
+@media  screen and (max-width: 768px) {
+  main{
+     flex-direction: column;
+     padding: 40px;
+  }
+
+  .principal{
+      width: 100%;
+  }
+
+  .logo-header{
+      padding: 0;
+  }
+  
+  .contenido-form{
+      width: 100%;
+      margin-left: 0;
+      margin-top: 40px;
+  }
+
+  form{
+      min-height: 70vh;
+      width: 100%;
+  }
+
+  .boton-primario, .boton-secundario{
+      width: 48%;
+  }
+
+  .boton-secundario{
+      background: none;
+      margin-left: 4%;
+  }
+
+  .area-resultado{
+      width: 100%;
+      min-height: max-content;
+      padding: 0;
+      margin-top: 64px;
+  }
+  .contenido-inicio img{
+      display: none;
+  }
+  
+  .contenido-resultado{
+     gap: 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main{
+      padding: 24px 16px 40px 16px;
+  }
+
+  .boton-primario, .boton-secundario{
+      width: 100%;
+      display: block;
+  }
+
+  .boton-secundario{
+    margin-left: 0;
+    margin-top: 24px;
+  }
+}
