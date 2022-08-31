@@ -30,7 +30,7 @@
                             <img src="imagenes/Group.svg" alt="">
                             <p>Solo letras minúsculas y sin acentos</p>
                         </span>
-                        <button id="btonEncriptar" class="boton-primario" type="button">Encriptar</button><button id="btonDesencriptar" class="boton-secundario" type="button">Desencriptar</button>
+                        <button id="btonEncriptar" onclick="btonEncriptar()" class="boton-primario" type="button">Encriptar</button><button id="btonDesencriptar" onclick="btonDesencriptar()" class="boton-secundario" type="button">Desencriptar</button>
                     </div>
                 </form>
             </div>
@@ -45,7 +45,7 @@
 
             <div class="contenido-resultado" id="contenedorTexto">
                 <p id="texto-resultado"></p>
-                <button id="btonCopiar" class="boton-copia">Copiar</button>
+                <button id="btonCopiar" onclick="btonCopiar()" class="boton-copia">Copiar</button>
             </div>
         </section>
     </main>
