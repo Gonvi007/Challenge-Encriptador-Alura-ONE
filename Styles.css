@@ -176,7 +176,21 @@ footer{
 .icon {
   color: rgb(9, 68, 107);
 }
-
+/* EFECTO ICONOS, LOGO MUNECO */
+.icon {
+  display: inline-block;
+  font-size: 20px;
+  animation: float 5s ease-in-out infinite;
+}
+.imagen-inicio {
+  animation-delay: 1s 
+}
+.icon-linkedin {
+  animation-delay: 1.5s;
+}
+.icon-github {
+  animation-delay: 1s;
+}
 p a{
   text-decoration: none;
   color: #0A3871;
